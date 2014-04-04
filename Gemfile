@@ -4,6 +4,8 @@ ruby '2.1.1'
 
 gem 'rails', '4.0.4'
 
+gem 'haml-rails'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
