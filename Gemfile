@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
-#ruby-gemset=hartl
+#ruby-gemset=delucia
 
 gem 'rails', '4.0.4'
 
