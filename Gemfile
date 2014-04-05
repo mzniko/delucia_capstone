@@ -8,6 +8,7 @@ gem 'haml-rails'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :test do
