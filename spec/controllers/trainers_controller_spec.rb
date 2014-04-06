@@ -7,6 +7,11 @@ describe TrainersController do
       get :index
       expect(response.status).to be(302)
     end
+    it "should give ok status when authenticated" do
+      trainer = build(:trainer)
+      sign_in trainer
+      expect(response.status).to be(200)
+    end
   end
 
   describe "GET 'show'" do
