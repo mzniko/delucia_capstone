@@ -1,1 +1,15 @@
-%h1 index page
+%h1 index page for champions (sponsored by wheaties)
+
+
+- if user_signed_in?
+  = link_to 'Sign Out', destroy_user_session_path, method: :delete
+  %p hello user!
+- elsif trainer_signed_in?
+  = link_to 'Sign Out', destroy_trainer_session_path, method: :delete
+  %p 'ello trainer!
+- else
+  %p= link_to 'Sign Up - User', new_user_registration_path
+  %p= link_to 'Sign In - Trainer', new_trainer_session_path
+  %p= link_to 'Sign In - User', new_user_session_path
+
+%p &copy copyright prestige worldwide
