@@ -4,4 +4,9 @@ FactoryGirl.define do
 		f.email "test@email.com"
 		f.password "testpassword"
 	end
+  factory :duplicate_email do |f|
+    f.name "Travis Wurzer"
+    f.email "test@email.com"
+    f.password "passwordtest"
+  end
 end
