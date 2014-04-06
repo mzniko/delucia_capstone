@@ -1,5 +1,10 @@
 require 'spec_helper'
 
 describe Trainer do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "should have a valid factory" do
+    expect(build(:trainer)).to be_valid
+  end
+  it "should be invalid without email" do
+    expect(build(:trainer, email: "")).to_not be_valid
+  end
 end
